@@ -227,7 +227,7 @@ export class MyDatePicker implements OnChanges, ControlValueAccessor {
         this.selectMonth = false;
         this.cdr.detectChanges();
         if (this.selectYear) {
-            this.generateYears(this.visibleMonth.year);
+            this.generateYears(Number(this.visibleMonth.year));
         }
     }
 
